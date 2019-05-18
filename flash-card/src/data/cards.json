@@ -1,0 +1,48 @@
+{
+    "cards": [
+        {
+            "word": "Best Lifecycle Method for making API calls!",
+            "def": "when making an API call you get the data from the server, and it will likely update the state which word will start to re-render the component. So you wanna make sure your DOM is ready:componentDidMount"
+        },
+        {
+            "word": "React Patterns!",
+            "def": "context-api pattern (used when passing props into a deeply nested component) not sure how that works render props (using childrin as a function, instaed of passing a component as a component you pass it as a function) presentation component"
+        },
+        {
+            "word": "Error Boundaries!",
+            "def": "Catching errors within a react app, similar to catch blocks (where you try to render to component and it would try to catch the error). This is a sepcial component and it has special lifecycle hooks: getDerivedStateFromError: static, similar to derivedStateFromProps here we can have a fallback component; this component is not going to render so i am going to have anotherone which will render componentDidCatch: you can log the error that is happening"
+        },
+        {
+            "word": "Css-in-js pattern!",
+            "def": "css is gloabel (even sass), so changin css can change other parts unintintionaly. you can pass css as js literal objects this is called inline css which will not change other parts."
+        },
+        {
+            "word": "You can't update state directly without setState()!",
+            "def": "setState will triger re-render of the component, while directly setting the state will not."
+        },
+        {
+            "word": "conditionaly render in react!",
+            "def": "if statement, && expretion, Conditional operator"
+        },
+        {
+            "word": "Code-splitting in react!",
+            "def": "In react compiling your project into a bundle can be huge depending on how big your project is, so react introduced code-spilitting. code-splitting: dynamic import, and lazzy loading with suspense for fallback component"
+        },
+        {
+            "word": "Redux alternatives!",
+            "def": "mobX, Apollo client with GraphQL, and RxJS"
+        },
+        {
+            "word": "Redux-saga and redux-thunk",
+            "def": "they are both middleware; thunk makes an action creator that has a promise for async req; saga dispatch an action that saga catches using gen fucntion (within the function lines are syncrynous); diffrence is: you can cancel this action since we are catching the action while in thunk you can't"
+        },
+        {
+            "word": "phases of React component’s lifecycle!",
+            "def": "Initial Rendering Phase: This is the phase when the component is about to start its life journey and make its way to the DOM. Updating Phase: Once the component gets added to the DOM, it can potentially update and re-render only when a prop or state change occurs. That happens only in this phase. Unmounting Phase: This is the final phase of a component’s life cycle in which the component is destroyed and removed from the DOM."
+        },
+        {
+            "word": "lifecycle methods of React components in detail!",
+            "def": "componentWillMount() – Executed just before rendering takes place both on the client as well as server-side. componentDidMount() – Executed on the client side only after the first render. componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and before another render is called. shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your component to update, return true else return false. By default, it returns false. componentWillUpdate() – Called just before rendering takes place in the DOM. componentDidUpdate() – Called immediately after rendering takes place. componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear up the memory spaces."
+        }
+    ]
+}
